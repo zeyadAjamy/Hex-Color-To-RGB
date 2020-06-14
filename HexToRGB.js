@@ -9,15 +9,15 @@ var getRGB;
         let g_convert = parseInt(value[3] + value[4], 16)
         let b_convert = parseInt(value[5] + value[6], 16)
         if(isNaN(r_convert) || isNaN(g_convert) || isNaN(b_convert)){
-          console.log("Make sure that your color code is in Hexdecimal.")
+          console.error("Make sure that your color code is in Hexdecimal.")
         } else{
           console.log(`Your Color is: rgb(${r_convert}, ${g_convert}, ${b_convert})`)
           }
       } else{
-        console.log("You Must start your Color code With #.")
+        console.error("You Must start your Color code With #.")
       }
     } else{
-      console.log("Make Sure That Your Input lenght is 7, and You start the color with #.")
+      console.error("Make Sure That Your Input lenght is 7, and You starts the color with #.")
     }
   }
-)()
+);
